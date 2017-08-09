@@ -4,8 +4,8 @@ To maintain the integrity of the branches and ensure we can deploy features inde
 1. NEVER commit directly to an ENV branch (master, stage or develop)
 2. NEVER merge one ENV branch into another
 3. Feature branches should be autonomously deployable
-4. Branch naming: [feature/bug/support]/[TeamName]/[Ticket #]–[CamelCaseDescription]
-5. Commit messages: Ticket #[Ticket#] – [short message]
+4. Branch naming: **[feature/bug/support]/[TeamName]/[Ticket #]–[CamelCaseDescription]**
+5. Commit messages: **Ticket #[Ticket#] – [short message]**
 
 ### Step 1
 Create your feature branch
