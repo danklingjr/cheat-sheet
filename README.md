@@ -7,8 +7,7 @@ To maintain the integrity of the branches and ensure we can deploy features inde
 4. Branch naming: **[feature/bug/support]/[TeamName]/[Ticket #]–[CamelCaseDescription]**
 5. Commit messages: **Ticket #[Ticket#] – [short message]**
 
-### Step 1
-Create your feature branch
+### Step 1 - Create your feature branch
 ```bash
 # switch to the master branch
 git checkout master
@@ -20,16 +19,14 @@ git pull origin master
 git checkout -b feature/seo/34320-AutoShipImportError
 ```
 
-### Step 2
-Commit your changes
+### Step 2 - Commit your changes
 ```bash
 # stage and commit your changes to feature branch
 git add -A
 git commit -m "Ticket #34320 - adding validations to form"
 ```
 
-### Step 3
-Deploy changes to dev for internal review
+### Step 3 - Deploy changes to dev for internal review
 ```bash
 # merge from origin/master and resolve any conflicts
 git pull origin master
@@ -47,8 +44,7 @@ git push origin feature/seo/34320-AutoShipImportError-develop
 # branch into develop
 ```
 
-### Step 4
-Deploy changes to production
+### Step 4 - Deploy changes to production
 ```bash
 # checkout your feature branch and merge from master
 git checkout feature/seo/34320-AutoShipImportError
