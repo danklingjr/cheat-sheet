@@ -8,7 +8,7 @@
 
 ### Step 1
 Create your feature branch
-```bash
+```shell
 # switch to the master branch
 git checkout master
 
@@ -21,7 +21,7 @@ git checkout -b feature/seo/34320-AutoShipImportError
 
 ### Step 2
 Commit your changes
-```bash
+```shell
 # stage and commit your changes to feature branch
 git add -A
 git commit -m "Ticket #34320 - adding validations to form"
