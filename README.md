@@ -9,7 +9,7 @@ To maintain the integrity of the branches and ensure we can deploy features inde
 
 ### Step 1
 Create your feature branch
-```shell session
+```bash
 # switch to the master branch
 git checkout master
 
@@ -22,7 +22,7 @@ git checkout -b feature/seo/34320-AutoShipImportError
 
 ### Step 2
 Commit your changes
-```shell session
+```bash
 # stage and commit your changes to feature branch
 git add -A
 git commit -m "Ticket #34320 - adding validations to form"
@@ -30,7 +30,7 @@ git commit -m "Ticket #34320 - adding validations to form"
 
 ### Step 3
 Deploy changes to dev for internal review
-```shell session
+```bash
 # merge from origin/master and resolve any conflicts
 git pull origin master
 
@@ -49,7 +49,7 @@ git push origin feature/seo/34320-AutoShipImportError-develop
 
 ### Step 4
 Deploy changes to production
-```shell session
+```bash
 # checkout your feature branch and merge from master
 git checkout feature/seo/34320-AutoShipImportError
 git pull origin master
