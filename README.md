@@ -7,7 +7,7 @@
 5. Commit messages: Ticket #[Ticket#] – [short message]
 
 ### Step 1
-`
+```
 # switch to the master branch
 git checkout master
 
@@ -16,4 +16,4 @@ git pull origin master
 
 # create your feature branch (example name 34320-AutoShipImportError)
 git checkout -b feature/seo/34320-AutoShipImportError
-`
+```
