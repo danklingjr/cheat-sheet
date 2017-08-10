@@ -31,17 +31,16 @@ git commit -m "Ticket #34320 - adding validations to form"
 # merge from origin/master and resolve any conflicts
 git pull origin master
 
-# create dev feature branch
-git checkout -b feature/seo/34320-AutoShipImportError-develop feature/seo/34320-AutoShipImportError
+# create feature branch based on dev
+git checkout -b feature/seo/34320-AutoShipImportError-develop origin/develop
 
-# merge from develop (and resolve conflicts)
-git pull origin develop
+# cherry pick changes from master feature branch onto dev feature branch
+git cherry-pick origin/master..feature/seo/34320-AutoShipImportError
 
 # push develop branch
 git push origin feature/seo/34320-AutoShipImportError-develop
 
-# go to TFS and open a Pull Request with squashing to merge feature
-# branch into develop
+# go to TFS and open a Pull Request to merge feature branch into develop
 ```
 
 ### Step 4 - Deploy changes to production
